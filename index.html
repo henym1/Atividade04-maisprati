@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Web</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#">
+                    <img src="img/icon-close.svg" alt="Botão fechar menu">
+                </a>
+            </li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Testemunhos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/primogem-render.png" alt="Primogem from Genshin Impact" height="50" width="50">
+                </a>
+            </li>
+            <li class="hideOnMobile"><a href="#">Sobre</a></li>
+            <li class="hideOnMobile"><a href="#">Serviços</a></li>
+            <li class="hideOnMobile"><a href="#">Testemunhos</a></li>
+            <li class="hideOnMobile"><a href="#">Contato</a></li>
+            <li class="menu-button" onclick=showSidebar()>
+                <a href="#"><img src="img/icon-menu.svg" alt="Botão abrir menu"></a>
+            </li>
+        </ul>
+    </nav>
+    
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
