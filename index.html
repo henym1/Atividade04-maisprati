@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genshin Web</title>
+    <title>Guardiões de Teyvat</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/icons/page-icon.svg">
 </head>
 
 <body>
@@ -15,11 +16,11 @@
             <ul class="sidebar">
                 <li onclick=hideSidebar()>
                     <a href="#">
-                        <img src="img/icon-close.svg" alt="Botão fechar menu">
+                        <img src="img/icons/icon-close.svg" alt="Botão fechar menu">
                     </a>
                 </li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="taberna.html">Taberna</a></li>
                 <li><a href="#">Testemunhos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
@@ -29,12 +30,12 @@
                         <img src="img/primogem-render.png" alt="Primogem from Genshin Impact" height="50" width="50">
                     </a>
                 </li>
-                <li class="hideOnMobile"><a href="#">Sobre</a></li>
-                <li class="hideOnMobile"><a href="#">Serviços</a></li>
+                <li class="hideOnMobile"><a href="sobre.html">Sobre</a></li>
+                <li class="hideOnMobile"><a href="taberna.html">Taberna</a></li>
                 <li class="hideOnMobile"><a href="#">Testemunhos</a></li>
                 <li class="hideOnMobile"><a href="#">Contato</a></li>
                 <li class="menu-button" onclick=showSidebar()>
-                    <a href="#"><img src="img/icon-menu.svg" alt="Botão abrir menu"></a>
+                    <a href="#"><img src="img/icons/icon-menu.svg" alt="Botão abrir menu"></a>
                 </li>
             </ul>
         </nav>
@@ -42,29 +43,16 @@
 
     <main>
         <section>
-            <p>texto</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, autem.</p>
+            <h1>Os Guardiões de Teyvat</h1>
+            <p><strong>Descubra um mundo de aventuras, camaradagem e exploração!</strong></p>
+            <p>Nosso objetivo é unir heróis que buscam não apenas explorar as maravilhas deste vasto mundo, mas também proteger seus cidadãos e preservar suas histórias. Aqui, você encontrará um ambiente acolhedor onde todos são bem-vindos, desde iniciantes até veteranos. Acreditamos que cada membro tem algo único a oferecer, e juntos podemos conquistar desafios que parecem impossíveis.</p>
+            <p>A guilda é mais do que um simples grupo de aventureiros; é uma comunidade vibrante onde amizade e colaboração são fundamentais. Organizamos eventos regulares que vão desde expedições coletivas a festivais celebrando as tradições de cada região de Teyvat. Nossos membros compartilham suas histórias e experiências, enriquecendo o conhecimento de todos.</p>
+            <p>Além disso, oferecemos recursos e serviços para ajudar os viajantes em sua jornada. Desde dicas valiosas sobre combate e exploração até assistência em missões específicas, nossa guilda está sempre pronta para apoiar. Queremos que você se sinta em casa, sabendo que sempre há alguém disposto a ajudar.</p>
+            <p>Junte-se a nós e prepare-se para a aventura! Explore, lute e torne-se um verdadeiro Guardião de Teyvat, contribuindo para a proteção e a celebração deste mundo maravilhoso!</p>
         </section>
 
-        <div class="raiden">
-            <img src="img/raiden-render.png" alt="Raiden Shogun from Genshin Impact">
+        <div class="character">
+            <img src="img/characters/raiden-render.png" alt="Raiden Shogun from Genshin Impact">
         </div>
 
         <div class="slider" style="
@@ -73,16 +61,16 @@
             --quantity: 10;
         ">
             <div class="list">
-                <div class="item hoyo" style="--position: 1"><img src="img/hoyoverse-logo.png" alt=""></div>
-                <div class="item" style="--position: 2"><img src="img/genshin-logo.png" alt=""></div>
-                <div class="item" style="--position: 3"><img src="img/star-rail-logo.png" alt=""></div>
-                <div class="item zzz" style="--position: 4"><img src="img/zzz-logo.png" alt=""></div>
-                <div class="item" style="--position: 5"><img src="img/honkai-impact-logo.png" alt=""></div>
-                <div class="item hoyo" style="--position: 6"><img src="img/hoyoverse-logo.png" alt=""></div>
-                <div class="item" style="--position: 7"><img src="img/genshin-logo.png" alt=""></div>
-                <div class="item" style="--position: 8"><img src="img/star-rail-logo.png" alt=""></div>
-                <div class="item zzz" style="--position: 9"><img src="img/zzz-logo.png" alt=""></div>
-                <div class="item" style="--position: 10"><img src="img/honkai-impact-logo.png" alt=""></div>
+                <div class="item hoyo" style="--position: 1"><img src="img/logos/hoyoverse-logo.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="img/logos/genshin-logo.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="img/logos/star-rail-logo.png" alt=""></div>
+                <div class="item zzz" style="--position: 4"><img src="img/logos/zzz-logo.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="img/logos/honkai-impact-logo.png" alt=""></div>
+                <div class="item hoyo" style="--position: 6"><img src="img/logos/hoyoverse-logo.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="img/logos/genshin-logo.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="img/logos/star-rail-logo.png" alt=""></div>
+                <div class="item zzz" style="--position: 9"><img src="img/logos/zzz-logo.png" alt=""></div>
+                <div class="item" style="--position: 10"><img src="img/logos/honkai-impact-logo.png" alt=""></div>
             </div>
         </div>
 
@@ -113,15 +101,15 @@
 
     <footer>
         <a href="https://github.com/henym1" target="_blank" rel="noopener noreferrer">
-            <img src="img/github-icon.svg" alt="github icon">
+            <img src="img/icons/github-icon.svg" alt="github icon">
         </a>
         
         <a href="https://www.linkedin.com/in/henry-adam/" target="_blank" rel="noopener noreferrer">
-            <img src="img/linkedin-icon.svg" alt="linkedin icon">
+            <img src="img/icons/linkedin-icon.svg" alt="linkedin icon">
         </a>
         
         <a href="https://www.instagram.com/henym1" target="_blank" rel="noopener noreferrer">
-            <img src="img/instagram-icon.svg" alt="instagram icon">
+            <img src="img/icons/instagram-icon.svg" alt="instagram icon">
         </a>
         
         <div>
