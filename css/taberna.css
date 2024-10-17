@@ -80,10 +80,13 @@ nav li:first-child {
     display: none;
 }
 
-
 main {
     margin-top: 50px;
     position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 35px;
 }
 
 main section {
@@ -100,7 +103,13 @@ main section {
 h1 {
     color: white;
     font-size: 2.5rem;
-    margin-bottom: 8%;
+}
+
+.carousel-title {
+    margin-bottom: 2%;
+    margin-top: 5%;
+    font-size: 2rem;
+    color: white;
 }
 
 main section p {
@@ -116,66 +125,83 @@ main section p {
     top: 50%;
     left: 85%;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
-    user-select: none;
+    z-index: -1;
 }
 
-.slider {
+.wrapper {
+    max-width: 1100px;
     width: 100%;
-    height: var(--height);
-    overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        #000 10% 90%,
-        transparent
-    );
-}
-
-.slider .list {
-    display: flex;
-    width: 100%;
-    min-width: calc(var(--width) * var(--quantity));
     position: relative;
 }
 
-.slider .list .item {
-    width: var(--width);
-    height: var(--height);
+.arrow-left, .arrow-right {
+    height: 30px;
+    width: 30px;
+    padding: 2%;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
     position: absolute;
-    left: 100%;
-    animation: autoRun 20s linear infinite;
-    transition: filter 0.5s;
-    animation-delay: calc( (20s / var(--quantity)) * (var(--position) - 1) )!important;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 1);
 }
 
-.slider .list .item img {
-    width: 100%;
-    transform: translateY(-20%);
+.arrow-left {
+    left: -50px;
 }
 
-.slider:hover .item {
-    animation-play-state: paused!important;
-    filter: grayscale(1);
+.arrow-right {
+    right: -50px;
 }
 
-.slider .item:hover {
-    filter: grayscale(0);
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow: hidden;
 }
 
-.slider[reverse="true"] .item {
-    animation: reversePlay 20s linear infinite;
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hoyo {
+.carousel .card {
+    height: 360px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card span {
+    margin-top: auto;
+}
+
+.card .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+.card h2 {
+    font-weight: 700;
+}
+
+.card span {
+    font-size: 1.1rem;
+}
+
+.card span img {
     transform: translateY(30%);
-}
-
-.zzz {
-    transform: translateY(20%);
-}
-
-.catalyst {
-    transform: translateY(10%);
 }
 
 footer {
@@ -191,19 +217,15 @@ footer a, p {
     margin: 15px;
 }
 
-@keyframes autoRun {
-    from {
-        left: 100%;
-    } to {
-        left: calc(var(--width) * -1);
+@media (max-width: 1200px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
     }
 }
 
-@keyframes reversePlay {
-    from {
-        left: calc(var(--width) * -1);
-    } to {
-        left: 100%;
+@media (max-width: 800px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
     }
 }
 
