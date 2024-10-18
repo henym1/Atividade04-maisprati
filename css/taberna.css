@@ -161,7 +161,10 @@ main section p {
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
     gap: 16px;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .carousel :where(.card, .img) {
@@ -171,10 +174,11 @@ main section p {
 }
 
 .carousel .card {
+    scroll-snap-align: start;
     height: 360px;
     list-style: none;
     background: #fff;
-    cursor: pointer;
+    cursor: default;
     border-radius: 8px;
     padding-bottom: 15px;
     flex-direction: column;
@@ -202,6 +206,16 @@ main section p {
 
 .card span img {
     transform: translateY(30%);
+}
+
+h1, h2,  
+.carousel-title, 
+.arrow-left, .arrow-right, 
+.card .img img, 
+.card span {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 
 footer {
