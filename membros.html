@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membros</title>
+    <link rel="stylesheet" href="css/taberna.css">
+    <link rel="icon" href="img/icons/page-icon.svg">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()>
+                    <a href="#">
+                        <img src="img/icons/icon-close.svg" alt="Botão fechar menu">
+                    </a>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="taberna.html">Taberna</a></li>
+                <li><a href="#">Membros</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/primogem-render.png" alt="Primogem from Genshin Impact" height="50" width="50">
+                    </a>
+                </li>
+                <li class="hideOnMobile"><a href="sobre.html">Sobre</a></li>
+                <li class="hideOnMobile"><a href="taberna.html">Taberna</a></li>
+                <li class="hideOnMobile"><a href="#">Membros</a></li>
+                <li class="hideOnMobile"><a href="#">Contato</a></li>
+                <li class="menu-button" onclick=showSidebar()>
+                    <a href="#"><img src="img/icons/icon-menu.svg" alt="Botão abrir menu"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Membros da Guilda</h1>
+            <h2>Consulte informações sobre os membros da nossa Guilda</h2>
+
+            <label for="characters">Personagem</label>
+            <select name="character" id="characters">
+
+                <optgroup label="Mondstadt">
+                    <option value="Albedo">Albedo</option>
+                    <option value="Amber" selected>Amber</option>
+                    <option value="Barbara">Barbara</option>
+                    <option value="Bennett">Bennett</option>
+                    <option value="Diluc">Diluc</option>
+                    <option value="Diona">Diona</option>
+                    <option value="Eula">Eula</option>
+                    <option value="Fischl">Fischl</option>
+                    <option value="Jean">Jean</option>
+                    <option value="Klee">Klee</option>
+                    <option value="Lisa">Lisa</option>
+                    <option value="Mona">Mona</option>
+                    <option value="Noelle">Noelle</option>
+                    <option value="Razor">Razor</option>
+                    <option value="Rosaria">Rosaria</option>
+                    <option value="Sucrose">Sucrose</option>
+                    <option value="Venti">Venti</option>
+                </optgroup>
+
+                <optgroup label="Liyue">
+                    <option value="Beidou">Beidou</option>
+                    <option value="Chongyun">Chongyun</option>
+                    <option value="Ganyu">Ganyu</option>
+                    <option value="Hu Tao">Hu Tao</option>
+                    <option value="Keqing">Keqing</option>
+                    <option value="Ningguang">Ningguang</option>
+                    <option value="Qiqi">Qiqi</option>
+                    <option value="Shenhe">Shenhe</option>
+                    <option value="Xiangling">Xiangling</option>
+                    <option value="Xiao">Xiao</option>
+                    <option value="Xingqiu">Xingqiu</option>
+                    <option value="Xinyan">Xinyan</option>
+                    <option value="Yanfei">Yanfei</option>
+                    <option value="Yelan">Yelan</option>
+                    <option value="Yun Jin">Yun Jin</option>
+                    <option value="Zhongli">Zhongli</option>
+                </optgroup>
+
+                <optgroup label="Inazuma">
+                    <option value="Ayaka">Ayaka</option>
+                    <option value="Ayato">Ayato</option>
+                    <option value="Gorou">Gorou</option>
+                    <option value="Itto">Itto</option>
+                    <option value="Kazuha">Kazuha</option>
+                    <option value="Kokomi">Kokomi</option>
+                    <option value="Raiden Shogun">Raiden Shogun</option>
+                    <option value="Sara">Kujou Sara</option>
+                    <option value="Sayu">Sayu</option>
+                    <option value="Thoma">Thoma</option>
+                    <option value="Yae">Yae Miko</option>
+                    <option value="Yoimiya">Yoimiya</option>
+                    <option value="Kuki">Kuki Shinobu</option>
+                </optgroup>
+            </select>
+
+            <button onclick="searchMember()">Consultar</button>
+
+            <div id="result">
+                <p>Resultado aqui</p>
+            </div>
+
+        </section>
+
+        <div class="character">
+            <img draggable="false" src="img/characters/collei-render.png" alt="Collei from Genshin Impact">
+        </div>
+
+    </main>
+
+    <footer draggable="false">
+        <a draggable="false" href="https://github.com/henym1" target="_blank" rel="noopener noreferrer">
+            <img draggable="false" src="img/icons/github-icon.svg" alt="github icon">
+        </a>
+
+        <a draggable="false" href="https://www.linkedin.com/in/henry-adam/" target="_blank" rel="noopener noreferrer">
+            <img draggable="false" src="img/icons/linkedin-icon.svg" alt="linkedin icon">
+        </a>
+
+        <a draggable="false" href="https://www.instagram.com/henym1" target="_blank" rel="noopener noreferrer">
+            <img draggable="false" src="img/icons/instagram-icon.svg" alt="instagram icon">
+        </a>
+
+        <div>
+            <p>&copy;2024. Copyright by Henry Adam</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>
