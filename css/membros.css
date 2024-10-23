@@ -137,6 +137,7 @@ main section p {
 .select-box {
     height: 40px;
     font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .searchBtn {
