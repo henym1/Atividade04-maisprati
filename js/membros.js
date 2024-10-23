@@ -1,3 +1,13 @@
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+
 function searchMember() {
    let member = document.querySelector('#characters').value
    let url = `https://gsi.fly.dev/characters/search?name=${member}`
