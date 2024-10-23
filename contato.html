@@ -61,7 +61,7 @@
 
                 <fieldset>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required>
                 </fieldset>
 
                 <fieldset>
@@ -70,7 +70,7 @@
                 </fieldset>
 
                 <div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="sendMail()">Enviar</button>
                 </div>
             </form>
 
@@ -97,7 +97,16 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/contato.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "-ffv9nejT5Ak0fxyP",
+            });
+        })();
+    </script>
 </body>
 
 </html>
