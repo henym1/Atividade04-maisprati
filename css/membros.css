@@ -89,6 +89,7 @@ main {
 main section {
     background-color: transparent;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 5%;
     width: 60%;
     margin-left: 10%;
